@@ -15,18 +15,18 @@ const [totalResults, setTotalResults] = useState(0)
 //   below we are making promise using async so the function will wait till request
 //  articles didnt comearticles.json() will convertarticles into json file
  const update = async () => {
-    // let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=a19a34b1f0bc44f7bbc7f3bb6c070274&page=${page}&pagesize=${props.pagesize}`;
-    // setLoding(true);
-    // props.progres(10);
-    // let dat = await fetch(url);
-    // props.progres(50);
-    // let parsedata = await dat.json();
-    // props.progres(75);
-    // setArticles(parsedata.articles);
-    // setTotalResults(parsedata.totalResults);
-    // setLoding(false);
-    // setPage(page+1);
-    // props.progres(100);
+    let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=a19a34b1f0bc44f7bbc7f3bb6c070274&page=${page}&pagesize=${props.pagesize}`;
+    setLoding(true);
+    props.progres(10);
+    let dat = await fetch(url);
+    props.progres(50);
+    let parsedata = await dat.json();
+    props.progres(75);
+    setArticles(parsedata.articles);
+    setTotalResults(parsedata.totalResults);
+    setLoding(false);
+    setPage(page+1);
+    props.progres(100);
   };
 
   useEffect(() => {
@@ -54,12 +54,12 @@ const [totalResults, setTotalResults] = useState(0)
         {/* loding symbol */}
         {loding && <Spinner/>}
 
-        {/* <InfiniteScroll
+        <InfiniteScroll
           dataLength={articles.length}
           next={fetchMoreData}
           hasMore={articles.length!==totalResults}
           loader={<Spinner/>}
-        > */}
+        >
           <div className="container w-100 p-0">
 
 {/* below elements are hetting updateing as  requierd */}
