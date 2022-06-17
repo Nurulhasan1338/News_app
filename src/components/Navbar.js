@@ -9,7 +9,7 @@ const Navbar=()=>{
       <div className="mb-1 mystyle3">
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
   <div className="container-fluid">
-    <a className="navbar-brand" href="/"><span class="mt-1 material-symbols-outlined"> newspaperNews
+    <a className="navbar-brand" href="/"><span className="mt-1 material-symbols-outlined"> newspaperNews
 </span></a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>

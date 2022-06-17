@@ -1,7 +1,4 @@
-{
-    "status": "ok",
-    "totalResults": 38,
-    "articles": [
+const articles = [
         {
             "source": {
                 "id": "cnn",
@@ -263,4 +260,6 @@
             "content": "US Secretary of State Antony Blinken told his Israeli counterpart Yair Lapid that investigations must be completed into the death of Al Jazeera journalist Shireen Abu Akleh, the State Department said… [+3385 chars]"
         }
     ]
-}
+
+export default articles;
+
