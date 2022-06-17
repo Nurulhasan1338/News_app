@@ -33,15 +33,15 @@ const App =()=>{
 
       <div className='container mystyle2'>
   <Routes>
-      <Route path='/News_app' element={<NewsComp key="home" progres={setProgress} pagesize={6} country="in" category="general"/>} /> 
-      <Route path='/News_app/general' element={<NewsComp key="general" progres={setProgress} pagesize={6} country="in" category="general"/>} /> 
-      <Route path='/News_app/entertainment' element={<NewsComp key="entertainment" progres={setProgress} pagesize={6} country="in" category="entertainment"/>} />
-      <Route path='/News_app/business' element={<NewsComp key="business" progres={setProgress} pagesize={6} country="in" category="business"/>} />
-      <Route path='/News_app/health' element={<NewsComp key="health" progres={setProgress} pagesize={6} country="in" category="health"/>} />
-      <Route path='/News_app/science' element={<NewsComp key="science" progres={setProgress} pagesize={6} country="in" category="science"/>} />
-      <Route path='/News_app/sports' element={<NewsComp key="sports" progres={setProgress} pagesize={6} country="in" category="sports"/>} />
-      <Route path='/News_app/technology' element={<NewsComp key="technology" progres={setProgress} pagesize={6} country="in" category="technology"/>} />
-      <Route path='/News_app/About' element={<About key="About"/>} />
+      <Route path='/dailyhunt' element={<NewsComp key="home" progres={setProgress} pagesize={6} country="in" category="general"/>} /> 
+      <Route path='/dailyhunt/general' element={<NewsComp key="general" progres={setProgress} pagesize={6} country="in" category="general"/>} /> 
+      <Route path='/dailyhunt/entertainment' element={<NewsComp key="entertainment" progres={setProgress} pagesize={6} country="in" category="entertainment"/>} />
+      <Route path='/dailyhunt/business' element={<NewsComp key="business" progres={setProgress} pagesize={6} country="in" category="business"/>} />
+      <Route path='/dailyhunt/health' element={<NewsComp key="health" progres={setProgress} pagesize={6} country="in" category="health"/>} />
+      <Route path='/dailyhunt/science' element={<NewsComp key="science" progres={setProgress} pagesize={6} country="in" category="science"/>} />
+      <Route path='/dailyhunt/sports' element={<NewsComp key="sports" progres={setProgress} pagesize={6} country="in" category="sports"/>} />
+      <Route path='/dailyhunt/technology' element={<NewsComp key="technology" progres={setProgress} pagesize={6} country="in" category="technology"/>} />
+      <Route path='/dailyhunt/About' element={<About key="About"/>} />
   </Routes>
   </div>
         </Router>
