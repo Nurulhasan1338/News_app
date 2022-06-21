@@ -9,10 +9,22 @@
     width: auto;
 
 }
-.loder{
-position: relative;
-text-align: center;
+.contact{
+  display: flex;
+  list-style: none;
+  font-size: 30px;
+  width:300px;
+  padding: 0;
+  font-size: 28px;
+  
+  
+  
 }
+.contact li a{
+  margin:6px;
+  color: black;
+}
+
 .cold{
   max-width: 300px;
   float: left;
@@ -20,15 +32,16 @@ text-align: center;
 
   
 }
-.side{
-  list-style: none;
-  transition: 0.6s;
+.Side{
+  transition-timing-function: ease-in-out;
+  transition: 1s;
 }
 .Side:hover{
-  background-color: rgb(36, 52, 58);
-  color: lightcyan;
- 
-  transform: translateX(15px);
+  letter-spacing: 2px;
+}
+.Side :active{
+  background-color: blue;
+  color:beige;
 }
 /* .bg-dark{
   background-color: aquamarine;

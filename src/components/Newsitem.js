@@ -1,4 +1,4 @@
-import "../items.css";
+import "../css/items.css";
 import React from "react";
 
   const newsitem=(props)=>{

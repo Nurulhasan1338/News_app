@@ -1,22 +1,18 @@
-import React,{useState} from "react";
-import "../items.css";
+import React from "react";
+import "../css/items.css";
 import Newsitem from "./Newsitem";
-import Articles from './articles';
-
 
 const NewsComp=(props)=>{
-
-const [articles, setArticles] = useState(Articles)
 
     return (
       <>
         
-        <h1 className="text-center mystyle">Daily bugs - Top News</h1>
+        <h1 className="text-center pt-3 mystyle">Daily bugs - Top {props.category} News</h1>
 
-          <div className="container w-100 p-0">
+          <div className="container w-100 px-3">
 
           <div className="d-flex w-100 flex-column justify-content-center p-0">
-            {articles.map((element) => {
+            {props.articales.map((element) => {
               return (
                 <div className="p-1 h-auto" key={element.url}>
                   <Newsitem

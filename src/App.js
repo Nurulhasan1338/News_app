@@ -1,14 +1,25 @@
-import './App.css';
+import './css/App.css';
 import Navbar from "./components/Navbar.js";
 import NewsComp from './components/NewsComp.js';
 import About from './components/about';
 import Sidebar from './components/Sidebar';
 import React from 'react'
+
+// different types of articals
+import Articles from './components/articales/articles';
+import Bussiness from './components/articales/bussiness';
+import Tech from './components/articales/tech';
+import enter from './components/articales/entertaiment';
+import Health from './components/articales/health';
+import Sports from './components/articales/sports';
+import science from './components/articales/science';
+
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Routes,
 } from "react-router-dom";
+
 
 
 const App =()=>{
@@ -23,16 +34,15 @@ const App =()=>{
       </div>
 
 
-      <div className='container mystyle2'>
+      <div className='container p-0 mystyle2'>
   <Routes>
-      <Route path='/dailyhunt' element={<NewsComp key="home" category={1}/>} /> 
-      <Route path='/dailyhunt/general' element={<NewsComp key="general" category={99}/>} /> 
-      <Route path='/dailyhunt/entertainment' element={<NewsComp key="entertainment" category={3}/>} />
-      <Route path='/dailyhunt/business' element={<NewsComp key="business" category={2}/>} />
-      <Route path='/dailyhunt/health' element={<NewsComp key="health" category={4}/>} />
-      <Route path='/dailyhunt/science' element={<NewsComp key="science" category={6}/>} />
-      <Route path='/dailyhunt/sports' element={<NewsComp key="sports" category={7}/>} />
-      <Route path='/dailyhunt/technology' element={<NewsComp key="technology" category={8} />} />
+      <Route path='/' element={<NewsComp key="home" category="General" articales={Articles}/>} /> 
+      <Route path='/dailyhunt/entertainment' element={<NewsComp key="entertainment" category="entertaiment" articales={enter}/>} />
+      <Route path='/dailyhunt/business' element={<NewsComp key="business" category="Bussiness" articales={Bussiness}/>} />
+      <Route path='/dailyhunt/health' element={<NewsComp key="health" category="Health" articales={Health}/>} />
+      <Route path='/dailyhunt/science' element={<NewsComp key="science" category="Science" articales={science}/>} />
+      <Route path='/dailyhunt/sports' element={<NewsComp key="sports" category="Sports" articales={Sports}/>} />
+      <Route path='/dailyhunt/technology' element={<NewsComp key="technology" category="Technology" articales={Tech} />} />
       <Route path='/dailyhunt/About' element={<About key="About"/>} />
   </Routes>
   </div>
