@@ -24,7 +24,7 @@ export default function About() {
         </p>
          <span><h6>you can follow me on..</h6></span>
         <ul className="contact">
-          <li><a href="nuruhasah62@gmail.com"><ion-icon name="mail"></ion-icon></a></li>
+          <li><a href="nuruhasan62@gmail.com"><ion-icon name="mail"></ion-icon></a></li>
           <li><a href=""><ion-icon name="logo-github"></ion-icon></a></li>
           <li><a href=""><ion-icon name="logo-linkedin"></ion-icon></a></li>
           <li><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
